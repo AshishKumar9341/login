@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        #form {
+            text-align: center;
+            background-color: aquamarine;
+            max-width: 500px;
+            margin: 30px auto;
+            padding: 20px;
+            border: 3px solid black;
+            border-radius: 10px;
+        }
+        h1 {
+            color: rgb(13, 110, 189);
+            border-bottom: 2px solid black;
+            padding-bottom: 10px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        input, textarea {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: chartreuse;
+            padding: 12px 20px;
+            border-radius: 5px;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: greenyellow;
+        }
+
+        /* Responsive styling for screens under 600px */
+        @media screen and (max-width: 600px) {
+            #form {
+                width: 90%;
+                padding: 15px;
+                margin: 20px auto;
+                border-width: 2px;
+            }
+
+            input, textarea {
+                width: 100%;
+                font-size: 16px;
+            }
+
+            button {
+                width: 100%;
+                font-size: 16px;
+                padding: 14px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <form action="https://sheetdb.io/api/v1/lxvqn6ro9cort" id="form" method="post">
+        <h1>Registration Form</h1>
+
+        <label for="name">Name:</label>
+        <input name="data[Name]" type="text" id="name" placeholder="Enter your name" required>
+
+        <label for="branch">Branch:</label>
+        <input name="data[Branch]" type="text" id="branch" placeholder="Enter your branch name" required>
+
+        <label for="course">Course:</label>
+        <input name="data[Course]" type="text" id="course" placeholder="Enter your course name" required>
+
+        <label for="dob">DOB:</label>
+        <input name="data[DOB]" type="date" id="dob" required>
+        <label for="password">Password:</label>
+        <input name="data[Password]" type="password" id="password" placeholder="Enter your password" required>
+
+
+        <label for="email">Email:</label>
+        <input name="data[Email]" type="email" id="email" placeholder="Enter your email" required>
+
+        
+        <label for="message">Message:</label>
+        <textarea name="data[Message]" id="message" placeholder="Enter your message" required></textarea>
+
+        <button type="submit">Send</button>
+    </form>
+</body>
+</html>
